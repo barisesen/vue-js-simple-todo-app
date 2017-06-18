@@ -1,15 +1,15 @@
 {
 	"todos": [
 		{
-			"text": "Pay Bills",
+			"text": "Use localstorage",
 			"isCompleted": false
 		},
 		{
-			"text": "Read Book",
+			"text": "Connect Sockets",
 			"isCompleted": false
 		},
 		{
-			"text": "Complete Project",
+			"text": "add images",
 			"isCompleted": false
 		}
 	]
