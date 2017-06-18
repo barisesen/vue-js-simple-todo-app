@@ -1,6 +1,10 @@
 {
 	"todos": [
 		{
+			"text": "Create simple vue app",
+			"isCompleted": true
+		},
+		{
 			"text": "Use localstorage",
 			"isCompleted": false
 		},
