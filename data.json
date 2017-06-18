@@ -1,0 +1,16 @@
+{
+	"todos": [
+		{
+			"text": "Pay Bills",
+			"isCompleted": false
+		},
+		{
+			"text": "Read Book",
+			"isCompleted": false
+		},
+		{
+			"text": "Complete Project",
+			"isCompleted": false
+		}
+	]
+}

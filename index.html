@@ -1,0 +1,28 @@
+<html ng-app>
+  <head>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  </head>
+  <body>
+    <div id="app" class="todo-wrapper">
+      <h2>You've got <span class="emphasis">{{ todos.length }}</span> things to do <p>Completed {{ completedTotal }} task!</p> </h2>
+      <ul>
+        <li v-for="(todo, index) in todos">
+          <span class="padding-left-15" @click="changeCompletedStatu(index)" v-if="!todo.isCompleted"><img src="icons/check.png" alt=""></span>
+
+          <span class="padding-left-15" @click="changeCompletedStatu(index)"><img v-if="todo.isCompleted" src="icons/checked.png" alt=""></span>
+
+          <span v-if="todo.isCompleted"class="done-true">{{ todo.text }}</span>
+          <span v-if="!todo.isCompleted" >{{ todo.text }}</span>
+          <span @click="removeTodo(index)" class="pull-right"><img src="icons/delete.png"></span>
+        </li>
+      </ul>
+
+        <input class="add-input" placeholder="I need to..." type="text" v-model="text" v-bind:value="text"  v-on:keyup.13="addTodo"/>
+        <button class="add-btn" @click=addTodo><h2>Add</h2></button>
+      
+      <button class="clear-btn" @click="deleteAllCompleted">Clear completed</button>
+    </div>
+  </body>
+    <script src="https://unpkg.com/vue"></script>
+  	<script src="app.js"></script>	
+</html>
